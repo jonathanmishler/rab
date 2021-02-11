@@ -4,7 +4,6 @@ import datetime
 from typing import Optional, List
 import collections
 
-import numpy as np
 import pandas as pd
 
 from . import brazil_tax_id

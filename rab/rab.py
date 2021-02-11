@@ -1,5 +1,5 @@
 import pandas as pd
-import banana_grabber
+import data_grabber
 from . import cleaning_pipeline
 
 
@@ -14,7 +14,7 @@ class Rab:
 
     def get_raw(self, update: bool = False):
         print("Getting the Registro Aeronáutico Brasileiro (RAB) from Brazilian ANAC")
-        return banana_grabber.grab_from_url(self.URL, self.pathname, "raw.csv", update)
+        return data_grabber.grab_from_url(self.URL, self.pathname, "raw.csv", update)
 
     def clean_raw(self) -> pd.DataFrame:
         if self.raw_filepath is None:
