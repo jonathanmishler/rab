@@ -55,7 +55,7 @@ class Rab:
 
     @property
     def raw(self):
-        return pd.read_csv(self.raw_filepath, sep=";", skiprows=1, dtype="str")
+        return pd.read_csv(self.raw_filepath, sep=";", skiprows=1, dtype="str", encoding='Latin-1')
 
     @property
     def clean(self):
