@@ -1,0 +1,3 @@
+# Registro Aeronáutico Brasileiro (RAB)
+
+This is a package to help access the Brazilian aircraft registration database from National Civil Aviation Agency of Brazil (ANAC).  The dataset is accessed as a JSON, CSV, or XLS file stored on their server.  This downloads and then cleans the database.  Specifically, it cleans the data in such a way to helps to identify the agricultural aircraft registered in Brazil.  The cleaning pipeline could be edited to make sure aircraft in other categories were normalized.
